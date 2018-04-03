@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: List
+items:
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    name: visit-service
+  spec:
+    tags:
+    - from:
+        kind: ImageStreamImage
+        name: visit-service@sha256:06391e50d22faeb6d60799515fe78f61ef949c4bef6c8921b3eff3c1c52a7403
+        namespace: petclinic-develop
+      name: 1.5.9
