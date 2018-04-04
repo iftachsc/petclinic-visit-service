@@ -6,7 +6,7 @@ items:
   kind: Service
   metadata:
     annotations:
-      fabric8.io/git-commit: 5cbef54bce52631c2c350271961dfa2f47602701
+      fabric8.io/git-commit: ffe0a0ad5882d0e84f60823a8c3710dee7e85e6e
       prometheus.io/port: "9779"
       fabric8.io/scm-url: https://github.com/spring-projects/spring-boot/spring-boot-starter-parent/spring-petclinic-microservices/visit-service
       fabric8.io/iconUrl: img/icons/spring-boot.svg
@@ -34,7 +34,7 @@ items:
   kind: DeploymentConfig
   metadata:
     annotations:
-      fabric8.io/git-commit: 5cbef54bce52631c2c350271961dfa2f47602701
+      fabric8.io/git-commit: ffe0a0ad5882d0e84f60823a8c3710dee7e85e6e
       fabric8.io/iconUrl: img/icons/spring-boot.svg
       fabric8.io/git-branch: master
       fabric8.io/metrics-path: dashboard/file/kubernetes-pods.json/?var-project=visit-service&var-version=1.5.9
@@ -60,7 +60,7 @@ items:
     template:
       metadata:
         annotations:
-          fabric8.io/git-commit: 5cbef54bce52631c2c350271961dfa2f47602701
+          fabric8.io/git-commit: ffe0a0ad5882d0e84f60823a8c3710dee7e85e6e
           fabric8.io/metrics-path: dashboard/file/kubernetes-pods.json/?var-project=visit-service&var-version=1.5.9
           fabric8.io/scm-url: https://github.com/spring-projects/spring-boot/spring-boot-starter-parent/spring-petclinic-microservices/visit-service
           fabric8.io/iconUrl: img/icons/spring-boot.svg

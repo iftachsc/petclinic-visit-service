@@ -10,6 +10,6 @@ items:
     tags:
     - from:
         kind: ImageStreamImage
-        name: visit-service@sha256:06391e50d22faeb6d60799515fe78f61ef949c4bef6c8921b3eff3c1c52a7403
-        namespace: petclinic-develop
+        name: visit-service@sha256:d1aebbb888f504f911f38a11c2d88d6d38cbcaa429a2bf8409166efc631e2509
+        namespace: petclinic-s2i
       name: 1.5.9
