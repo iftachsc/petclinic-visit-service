@@ -1,8 +1,0 @@
-metadata:
-  name: visit-service
-spec:
-  port:
-    targetPort: http
-  to:
-    kind: Service
-    name: visit-service
