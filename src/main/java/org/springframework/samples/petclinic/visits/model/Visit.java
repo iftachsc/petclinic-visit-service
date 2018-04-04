@@ -29,12 +29,7 @@ import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-/**
- * Simple JavaBean domain object representing a visit.
- *
- * @author Ken Krebs
- * @author Maciej Szarlinski
- */
+
 @Entity
 @Table(name = "visits")
 public class Visit {

@@ -32,7 +32,8 @@ import java.util.List;
 @Slf4j
 public class VisitResource {
 
-    private final VisitRepository visitRepository;
+	@Autowired
+    private VisitRepository visitRepository;
 
     @PostMapping("owners/*/pets/{petId}/visits")
     @ResponseStatus(HttpStatus.NO_CONTENT)
@@ -41,7 +42,7 @@ public class VisitResource {
         @PathVariable("petId") int petId) {
 
         visit.setPetId(petId);
-        log.info("Saving visit {}", visit);
+        System.out.println("Saving visit " + visit);
         visitRepository.save(visit);
     }
 

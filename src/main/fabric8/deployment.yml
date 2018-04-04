@@ -1,0 +1,23 @@
+metadata:
+  labels:
+    project: ${project.artifactId}
+    version: ${project.version}
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        project: ${project.artifactId}
+        version: ${project.version}
+    spec:
+      containers:
+      - resources:
+          requests:
+            cpu: 200m
+            memory: 200Mi
+      volumes:
+      - name: hawkular-openshift-agent
+        configMap:
+          name: ${project.artifactId}-metrics-config
+      livenessProbe:
+        initialDelaySeconds: 30
